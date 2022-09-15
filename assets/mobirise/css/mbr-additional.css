@@ -849,7 +849,7 @@ a {
 }
 .cid-t71sLuiJdg .card-wrapper {
   border-radius: 4px;
-  background-color: #ffffff;
+  background-color: #fafafa;
 }
 .cid-t71sLuiJdg .image-wrapper img {
   width: 100%;
@@ -860,22 +860,6 @@ a {
 }
 .cid-t71sLuiJdg .price {
   text-align: center;
-}
-.cid-thvNd44jjl {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
-}
-@media (max-width: 991px) {
-  .cid-thvNd44jjl .image-wrapper {
-    margin-bottom: 1rem;
-  }
-}
-.cid-thvNd44jjl .row {
-  flex-direction: row-reverse;
-}
-.cid-thvNd44jjl img {
-  width: 100%;
 }
 .cid-t71SgiC3kd {
   padding-top: 5rem;
