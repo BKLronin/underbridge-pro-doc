@@ -795,7 +795,7 @@ a {
 .cid-t6QBg8lg28 .item-wrapper {
   position: relative;
   border-radius: 4px;
-  background: #fafafa;
+  background: #000000;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -819,9 +819,11 @@ a {
 .cid-t6QBg8lg28 .mbr-text,
 .cid-t6QBg8lg28 .mbr-section-btn {
   text-align: left;
+  color: #fafafa;
 }
 .cid-t6QBg8lg28 .item-title {
   text-align: left;
+  color: #fafafa;
 }
 .cid-t6QBg8lg28 .item-subtitle {
   text-align: center;
