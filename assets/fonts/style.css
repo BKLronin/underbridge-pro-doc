@@ -1,0 +1,10 @@
+@font-face {
+   font-family: 'OpenSans-VariableFont_wdth,wght';
+   font-display: swap;
+   src: url('OpenSans-VariableFont_wdth,wght/font.ttf');
+}
+@font-face {
+   font-family: 'OpenSans-Regular';
+   font-display: swap;
+   src: url('OpenSans-Regular/font.ttf');
+}
