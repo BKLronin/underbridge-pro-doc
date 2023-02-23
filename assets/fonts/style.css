@@ -1,10 +1,15 @@
 @font-face {
+   font-family: 'OpenSans-Bold';
+   font-display: swap;
+   src: url('OpenSans-Bold/font.ttf');
+}
+@font-face {
+   font-family: 'Raleway-VariableFont_wght';
+   font-display: swap;
+   src: url('Raleway-VariableFont_wght/font.ttf');
+}
+@font-face {
    font-family: 'OpenSans-VariableFont_wdth,wght';
    font-display: swap;
    src: url('OpenSans-VariableFont_wdth,wght/font.ttf');
-}
-@font-face {
-   font-family: 'OpenSans-Regular';
-   font-display: swap;
-   src: url('OpenSans-Regular/font.ttf');
 }
