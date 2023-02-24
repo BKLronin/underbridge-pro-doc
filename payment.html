@@ -7,10 +7,10 @@
   <meta name="generator" content="Mobirise v5.7.12, mobirise.com">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/underbridge-128x72.png" type="image/x-icon">
-  <meta name="description" content="Underbridge download section">
+  <meta name="description" content="">
   
   
-  <title>Download</title>
+  <title>Impressum</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -27,7 +27,7 @@
 </head>
 <body>
   
-  <section data-bs-version="5.1" class="menu menu3 cid-tkByiLHOwS" once="menu" id="menu3-w">
+  <section data-bs-version="5.1" class="menu menu3 cid-tkByiLHOwS" once="menu" id="menu3-v">
     
     <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
         <div class="container">
@@ -64,83 +64,62 @@
     </nav>
 </section>
 
-<section data-bs-version="5.1" class="content4 cid-tkBFg2hj8D" id="content4-12">
-    
-
-    
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-10">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-1">
-                    Download Section</h3>
-                
-                
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content10 cid-twpXgnG1ek" id="content10-1d">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md">
-                
-                <h6 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
-                    Version: 1.30 (current)&nbsp;</h6>
-            </div>
-            <div class="col-md-12 col-lg-6">
-                <p class="mbr-text mbr-fonts-style display-7">Changelog:<br>- Native macOS support (arm64) Ventura<br>- Added live recording mode<br>- New latency compensation measuring<br>- Added bug reporter<br>- Improved user profile editor<br>- Added experimental Octatrack support.<br>- Fixed various small bugs</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content11 cid-tkBBhk0Svh" id="content11-z">
+<section data-bs-version="5.1" class="content5 cid-tbmx0AReGL" id="content5-i">
     
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
-                <div class="mbr-section-btn align-center"><a class="btn btn-info display-4" href="https://cloud.netzspielplatz.de/s/fLJ3DpRSQtaFKEt" target="_blank">DOWNLOAD</a></div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="content10 cid-tkBAfi3iHH" id="content10-y">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md">
                 
-                <h6 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
-                    Version: 1.20&nbsp;</h6>
-            </div>
-            <div class="col-md-12 col-lg-6">
-                <p class="mbr-text mbr-fonts-style display-7">Changelog:<br>- Fixed "no device connected" bug on Mac<br>- Implemented update notification system<br>- Fixed device assistant on Windows<br>- Improved thread handling<br>- Many thanks to Duŝan Kreidl and others for providing feedback for Mac!<br>- 1.21 hotfix for writing problems (rare)</p>
-            </div>
-        </div>
-    </div>
+                <div id="smart-button-container">
+                      <div style="text-align: center;">
+                        <div id="paypal-button-container"></div>
+                      </div>
+                    </div>
+                  <script src="https://www.paypal.com/sdk/js?client-id=sb&enable-funding=venmo&currency=EUR" data-sdk-integration-source="button-factory"></script>
+                  <script>
+                    function initPayPalButton() {
+                      paypal.Buttons({
+                        style: {
+                          shape: 'rect',
+                          color: 'gold',
+                          layout: 'vertical',
+                          label: 'paypal',
+                          
+                        },
+
+                        createOrder: function(data, actions) {
+                          return actions.order.create({
+                            purchase_units: [{"description":"underbridge-pro","amount":{"currency_code":"EUR","value":15}}]
+                          });
+                        },
+
+                        onApprove: function(data, actions) {
+                          return actions.order.capture().then(function(orderData) {
+                            
+                            // Full available details
+                            console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+
+                            // Show a success message within this page, e.g.
+                            const element = document.getElementById('paypal-button-container');
+                            element.innerHTML = '';
+                            element.innerHTML = '<h3>Thank you for your payment!</h3>';
+
+                            // Or go to another URL:  actions.redirect('thank_you.html');
+                            
+                          });
+                        },
+
+                        onError: function(err) {
+                          console.log(err);
+                        }
+                      }).render('#paypal-button-container');
+                    }
+                    initPayPalButton();
+                  </script>
+                  
 </section>
 
-<section data-bs-version="5.1" class="content10 cid-tkBDVCzosA" id="content10-10">
-    
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md">
-                
-                <h6 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
-                    Version: 1.10</h6>
-            </div>
-            <div class="col-md-12 col-lg-6">
-                <p class="mbr-text mbr-fonts-style display-7">Changelog:<br>- Added new Device, Elektron Model: Cycles, Samples<br>- UI improvements<br>- Device Assistant for input output settings<br>- New information System<br>- Sequencing Engine improvement</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="footer3 cid-t71s76xrJG" once="footers" id="footer3-x">
+<section data-bs-version="5.1" class="footer3 cid-t71s76xrJG" once="footers" id="footer3-h">
 
     
 
@@ -184,7 +163,7 @@
             </div>
         </div>
     </div>
-</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2466884" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Made with &#8204;</p><a style="z-index:1" href="https://mobirise.com/html-editor.html">WYSIWYG HTML Editor</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
+</section><section class="display-7" style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;"><a href="https://mobiri.se/2466884" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img alt="" style="height: 4rem;" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a><p style="margin: 0;text-align: center;" class="display-7">Made with &#8204;</p><a style="z-index:1" href="https://mobirise.com/builder/no-code-website-builder.html">No Code Website Builder</a></section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
 <input name="cookieData" type="hidden" data-cookie-cookiesAlertType='false' data-cookie-customDialogSelector='null' data-cookie-colorText='#424a4d' data-cookie-colorBg='rgb(234, 239, 241)' data-cookie-opacityOverlay='80' data-cookie-textButton='Agree' data-cookie-rejectText='REJECT' data-cookie-colorButton='' data-cookie-rejectColor='' data-cookie-colorLink='#424a4d' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. Read our <a href='page2.html'>cookie policy</a>.">
