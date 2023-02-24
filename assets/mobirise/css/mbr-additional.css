@@ -1253,80 +1253,29 @@ a {
 .cid-t72wjsyrDk .mbr-description {
   color: #ffffff;
 }
-.cid-twHykKsVeu {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  background-color: #ffffff;
+.cid-twMmM59gU2 .mbr-fallback-image.disabled {
+  display: none;
 }
-.cid-twHykKsVeu iframe,
-.cid-twHykKsVeu img,
-.cid-twHykKsVeu video {
+.cid-twMmM59gU2 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
   width: 100%;
-}
-.cid-twHykKsVeu .mbr-media {
-  position: relative;
-}
-.cid-twHykKsVeu .mbr-media img {
-  width: 100%;
-  object-fit: cover;
-}
-.cid-twHykKsVeu .icon-wrap {
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  height: 100%;
   position: absolute;
-}
-.cid-twHykKsVeu .mbr-media span {
-  font-size: 4rem;
-  transition: all 0.2s;
-}
-.cid-twHykKsVeu .modalWindow {
-  position: fixed;
-  z-index: 5000;
-  left: 0;
   top: 0;
-  background-color: rgba(61, 61, 61, 0.65);
-  height: 100%;
+  background-image: url("../../../assets/images/intro-1-1920x1080.png");
+}
+.cid-twMmM59gU2 .mbr-section-title,
+.cid-twMmM59gU2 .mbr-text,
+.cid-twMmM59gU2 .mbr-section-btn {
+  text-align: center;
+}
+.cid-twMmM59gU2 .video-wrapper {
+  margin: auto;
+}
+.cid-twMmM59gU2 .video-wrapper iframe {
   width: 100%;
-}
-@media (max-width: 767px) {
-  .cid-twHykKsVeu .modalWindow {
-    width: 100vw;
-    height: 100vh;
-  }
-}
-.cid-twHykKsVeu .modalWindow .modalWindow-container {
-  display: table-cell;
-  vertical-align: middle;
-}
-.cid-twHykKsVeu .modalWindow .modalWindow-video {
-  height: 100%;
-  width: 80vw;
-  margin: 0 auto;
-}
-.cid-twHykKsVeu .close {
-  position: fixed;
-  opacity: 0.5;
-  font-size: 22px;
-  font-weight: 300;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  color: #fff;
-  top: 2.5rem;
-  right: 2.5rem;
-  border: 2px solid #fff;
-  text-shadow: none;
-  z-index: 5;
-  transition: opacity 0.3s ease;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-.cid-twHykKsVeu .close:hover {
-  opacity: 1;
-  background: #000;
-  color: #fff;
 }
 .cid-twpN6NfnH6 {
   padding-top: 6rem;
